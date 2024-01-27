@@ -1,0 +1,3052 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    /* font-family: 'Assistant', sans-serif; */
+    
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(239, 237, 234, 0.7);
+    overflow-x: hidden;
+}
+
+.home{
+    width: 100vw;
+    height: 100vh;
+    background: url("fashion\ modern.jpg");
+    background-size: cover;
+    
+    
+    
+    
+    
+   
+
+}
+
+#nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background:white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 10px 5px 5px rgb(150, 149, 149);
+    z-index: 999;
+    position:sticky;
+    top: 0;
+    left: 0;
+    
+    
+
+
+}
+
+.leftNav{
+    font-size: 1.2rem;
+    font-family: 'Salsa';
+    color: rgb(9, 9, 71);
+    padding-left: 2rem;
+
+}
+
+.rightNav{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding-right: 3rem;
+    
+    
+
+
+}
+
+.rightNav a{
+    
+    font-size: 1.1rem;
+    font-family: 'Assistant', sans-serif;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    transition: ease-in 0.2s;
+
+
+    
+}
+
+.rightNav a:hover,
+.rightNav a.active{
+    color: rgb(37, 136, 103);
+    
+}
+
+/* .rightNav a.active::after,
+.rightNav a:hover::after{
+    content: "";
+    width: 5%;
+    height: 2px;
+    background: rgb(37, 136, 103);
+   
+    bottom: -4px;
+    left:20px;
+    
+} */
+
+
+
+.Hero-Page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+    
+    
+    
+
+   
+
+    
+
+
+}
+
+.left-Content{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 6rem;
+    font-family: 'Assistant', sans-serif;
+    margin-top: 30vh;
+    
+
+
+
+}
+
+.left-Content h1{
+    font-weight: bolder;
+    font-size: 3.8rem;
+    
+    
+}
+
+#firstHead{
+    color: white;
+}
+#secondHead{
+    color: black;   
+}
+
+#h3-01{
+    font-size:1.5rem;
+    font-weight: 600;
+    
+}
+
+#h4-01{
+    font-size: 1.2rem;
+    color: rgba(38, 38, 146, 0.414);
+}
+
+#btn1{
+    background:none;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    color: rgba(13, 13, 126, 0.897);
+    transition: ease 0.5s;
+
+}
+
+#btn1:hover{
+    letter-spacing: 2px;
+    color: black;
+}
+
+
+.Feature{
+    padding-top: 5rem;
+    background-color: rgba(239, 237, 234, 0.7);
+    width: 100vw;
+    
+}
+
+.feature-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    margin-right: 3.5rem;
+
+}
+
+
+#cardpart{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    width:180px;
+    height: 200px;
+    border: solid 1px rgb(180, 178, 178);
+    border-radius: 6px;
+    box-shadow: 4px 5px 5px rgba(177, 176, 176, 0.533);
+    padding: 1rem 0;
+    background-color: whitesmoke;
+    transition: all 0.2s;
+
+}
+
+.card:hover{
+   transform: rotateZ(10deg);
+}
+
+.card img{
+    height: 100px;
+    
+
+}
+
+.card p{
+    font-size: 1rem;
+    background-color: rgba(157, 217, 195, 0.536);
+    padding: 0.2rem 0.6rem;
+    font-family: 'Assistant', sans-serif;
+    
+}
+
+
+.Feature .card:nth-child(2) p{
+    background: #bae3e4b1;
+}
+
+.Feature .card:nth-child(3) p{
+    background: #a1bbd1b1;
+}
+
+.Feature .card:nth-child(4) p{
+    background: #bac2e4b1;
+}
+
+.Feature .card:nth-child(5) p{
+    background: #d2bae4b1;
+}
+
+.Feature .card:nth-child(6) p{
+    background: #e4bad3b1;
+}
+
+
+
+.feature-products h1{
+    font-size: 3.5rem;
+    color: black;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.5s;
+
+
+}
+
+.feature-products h1:hover{
+    color: #7d94c9;
+    letter-spacing: 3px;
+}
+
+
+.feature-products p{
+    font-size: 1rem;
+    color: rgb(50, 50, 52);
+    font-family: 'Assistant', sans-serif;
+    text-align: center;
+
+}
+
+.Products{
+    padding-top: 6rem;
+    background-color: rgba(239, 237, 234, 0.7);
+    width: 100vw;
+
+
+}
+
+.cloth-collection{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    margin-left: 8rem;
+    max-width: 85%;
+    margin-top: 4rem;
+    padding-bottom: 10rem;
+
+    
+}
+
+.cloth-card{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px  rgba(163, 162, 162, 0.478);  
+    border-radius: 12px;
+    width: 80%;
+    background-color: white;
+    margin-bottom: 1rem;
+    position: relative;
+    transition: all 0.2s;
+    
+
+}
+
+.cloth-card:hover{
+    /* transform: translateX(2rem); */
+    
+    box-shadow: 4px 5px 8px rgb(155, 154, 154);
+    
+}
+
+.cloth-card:hover .cloth-img{
+    background-color: rgba(157, 210, 192, 0.747);
+    transition-duration: 0.5s;
+}
+
+.cloth-card:hover .cloth-img img{
+    transform: scale(1.2);
+
+    transition-duration: 0.8s;
+}
+
+.cloth-img{
+    background-color: rgba(191, 231, 234, 0.834);
+    border-radius: 6px;
+    border: none;
+    margin: 1rem;
+    padding: 1rem 0;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cloth-img img{
+    height: 200px;
+    
+}
+
+.about-cloth{
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+    justify-content: flex-start;
+    font-family: 'Assistant', sans-serif;
+    margin-left: 1rem;
+    
+}
+
+.about-cloth p{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgba(171, 171, 171);
+}
+.about-cloth h3{
+    color: rgb(37, 136, 103);
+    font-size: 1rem;
+}
+
+.about-cloth img{
+    height: 10px;
+    width: 60px;
+}
+
+.cloth-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cloth-price h3{
+    font-size: 1.2rem;
+    color: rgb(37, 136, 103);
+    font-family: 'Assistant', sans-serif;
+    
+
+
+}
+
+.cloth-card .addCart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgba(121, 218, 185, 0.378);
+
+    
+
+    
+}
+
+.addCart i{
+    color: rgb(16, 102, 73);
+}
+
+.banner{
+
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:url("cover\ page.jpg");
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Assistant', sans-serif;
+   
+}
+
+.banner h2{
+    font-size: 3rem;
+    color: #0f4068;
+
+}
+
+.banner h3{
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(61, 14, 83);
+
+}
+
+.banner button{
+    font-size: 1rem;
+    padding: 0.6rem 1rem ;
+    background-color: #105893d4;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.2s;
+}
+
+.banner button:hover{
+    background-color: black;
+}
+
+.banner h2 span{
+    color: rgb(231, 27, 27);
+}
+
+.new-arrivals{
+    width: 100vw;
+    background-color: rgba(239, 237, 234, 0.7);
+    padding-top: 6rem;
+}
+
+.newCloth-Cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-right: 5rem;
+    margin-left: 8rem;
+    max-width: 85%;
+    align-items: center;
+    
+}
+
+.newCloth-Cards .cloth-card .about-cloth p{
+    font-size: 1rem;
+}
+
+.new-launch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-family: 'Assistant', sans-serif;
+    
+}
+
+.new-arrivals h1{
+    font-size: 4rem;
+    font-weight: 600;
+    color: rgb(18, 17, 17);
+    transition: all 0.5s;
+
+}
+
+.new-arrivals h1:hover{
+    color: #7d94c9;
+    letter-spacing: 3px;
+    
+}
+
+.new-arrivals p{
+    font-size: 1.5rem;
+    color: rgba(160, 157, 157, 0.815);
+}
+
+.offer-banners{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(239, 237, 234, 0.7);
+    padding-top: 4rem;
+
+
+}
+
+.large-banner{
+    display: flex;
+    flex-direction:column ;
+    justify-content: flex-start;
+    justify-content: center;
+    width: 40vw;
+    background: url("offer\ banner1.png");
+    background-size: cover;
+    background-position:inherit;
+    height: 40vh;
+    font-family: 'Assistant', sans-serif;
+    transition: all 0.2s;
+}
+
+.large-banner:hover{
+    box-shadow: 5px 6px 8px rgb(223, 133, 190);
+}
+ .text{
+    margin-left: 2rem;
+}
+
+.text h3{
+    font-size: 2rem;
+    color: white;
+}
+
+.text p{
+    font-size: 1rem;
+    color: white;
+}
+
+.text button{
+    padding: 0.6rem 1rem;
+    margin-top: 1rem;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    transition: all 0.2s;
+
+}
+
+.text button:hover{
+    background-color: white;
+    color: black;
+    scale: 1.1;
+    transition-duration: 0.6s;
+    
+}
+.text h4{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: antiquewhite;
+}
+
+.top-banner{
+    display: flex;
+    flex-direction: row ;
+    gap:3rem;
+}
+
+.large-banner2{
+    display: flex;
+    flex-direction:column ;
+    justify-content: flex-start;
+    justify-content: center;
+    width: 40vw;
+    background: url("banner2.png");
+    background-size: cover;
+    background-position:inherit;
+    height: 40vh;
+    font-family: 'Assistant', sans-serif;
+    transition: all 0.2s;
+
+}
+
+.large-banner2:hover{
+    box-shadow: 5px 6px 8px rgb(59, 41, 33);
+}
+
+.bottom-banner{
+    display: flex;
+    flex-direction: row;
+    gap: 3.8rem;
+    margin-top: 4rem;
+
+}
+
+.medium-banner{
+    width: 25vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Assistant', sans-serif;
+    color: white;
+    background: url("m\ banner1.png");
+    background-size: cover;
+    transition: all 0.2s;
+    
+
+}
+
+.medium-banner:hover{
+    opacity: 60%;
+    transition-duration: 0.4s;
+}
+
+.medium-banner h3{
+    font-size: 2rem;
+    letter-spacing: 2px;
+
+}
+.medium-banner p{
+    font-size: 1rem;
+    color: antiquewhite;
+}
+
+#mb2{
+    background: url("m\ banner\ 2.png");
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+#mb2 h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+#mb2 p{
+    color: antiquewhite ;
+}
+
+#mb3 {
+    background: url("m\ banner3.png");
+    background-size: cover;
+    background-position: inherit;
+    
+}
+
+#mb3 h3{
+    color: rgb(207, 186, 150);
+    margin-left: 1rem;
+}
+
+#mb3 p{
+    color: rgb(207, 186, 150);
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+
+.newsletter{
+    background-color: rgba(239, 237, 234, 0.7);
+    width: 100vw;
+    height: fit-content;
+    padding-top: 4rem;
+}
+.news{
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f4068;
+    color: white;
+    font-family: 'Assistant', sans-serif;
+    
+
+
+
+}
+
+.news .left{
+    margin-left: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+   
+}
+
+.left h3{
+    font-size: 2rem;
+}
+
+.left p{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.left p span{
+    color: rgb(230, 127, 9);
+    opacity: 100%;
+}
+
+.news .right{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    margin-right: 8rem;
+}
+
+.right input{
+    width: 20vw;
+    height: 2.5rem;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+    outline: 0;
+}
+
+.right button{
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 0 1rem;
+    background-color: rgb(37, 136, 103);
+    color: white;
+    font-size: 0.8rem;
+}
+
+.footerbox{
+    width: 100vw;
+    background-color: rgba(239, 237, 234, 0.7);
+    padding-bottom: 4rem;
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Assistant', sans-serif;
+    padding-bottom: 3rem;
+    
+
+
+}
+
+footer .leftFooter{
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+
+.leftFooter .logoname{
+    margin-bottom: 1rem;
+    font-family: 'Salsa';
+    color: rgb(9, 9, 71);
+    
+
+}
+
+.contactinfo h3{
+    margin:1rem 0;
+
+}
+
+.contactinfo h4{
+    color: grey;
+    font-size: 1rem;
+    font-weight: 400;
+    
+}
+
+.contactinfo span{
+    color: black;
+    font-weight: 600;
+    
+}
+.social-Media {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+}
+
+.social-Media i{
+    scale: 1.2;
+    opacity: 80%;
+}
+
+.social-Media i:hover{
+    color: #0f4068;
+    scale: 1.8;
+    transition-duration: 0.5s;
+    
+}
+
+.rightFooter{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 4rem;
+    margin-right: 8rem;
+
+}
+
+.coloumn{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.coloumn h4{
+    color: grey;
+    font-weight: 400;
+}
+
+.coloumn h3{
+    margin-bottom:1rem ;
+}
+
+.coloumn .apps img{
+    margin: 0.4rem 0;
+    margin-right: 1.4rem;
+    height: 38px;
+    border: solid 2px rgb(37, 136, 103);
+    border-radius: 5px;
+}
+
+.footerbox #copyright{
+    color: grey;
+    font-family: 'Assistant', sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+
+
+/* shop page styling .................................................................................................................. */
+.shop{
+    width: 100vw;
+    height: 40vh;
+    background: url("web\ banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.shop-heropage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Assistant', sans-serif;
+    color: #0f4068;
+    padding-top: 2rem;
+
+}
+
+.shop-heropage h2{
+    font-size: 4rem;
+
+}
+
+.shop-heropage h4{
+    font-size: 1rem;
+}
+
+.more{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: -4rem;
+    margin-bottom: 2rem;
+}
+
+.more button{
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #0f4068;
+}
+
+.more button:hover{
+    background: #000;
+
+}
+
+.more i{
+    scale: 2;
+    margin-top: 0.7rem;
+    margin-left: 1rem;
+    color: #0f4068;
+}
+.more i:hover{
+    color: #000;
+}
+
+/* single product info page styling */
+
+.product-info{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.p-left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.p-left .upper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b5d4cc;
+    height: 500px;
+    margin-left: 4rem;
+    margin-top: 4rem;
+
+    
+}
+
+.upper img{
+    height: 420px;
+    
+}
+
+.p-left .lower{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-left: 4rem;
+    margin-top: 0.5rem;
+
+}
+
+.image-div{
+    height: 120px;
+    background: #b5d4cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-div img{
+    height: 100px;
+}
+
+.p-right{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-left: 4rem;
+    
+}
+
+.top-div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'Assistant', sans-serif;
+}
+
+.top-div h3{
+    font-size: 3rem;
+    margin-top: 3rem;
+
+}
+
+.top-div h2{
+    font-size: 2.5rem;
+    color: #0f4068;
+}
+
+.select{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+   
+}
+
+#select01{
+    height: 30px;
+    background: #f6f4f4;
+    border: solid 1px rgb(168, 166, 166);
+    outline: none;
+    padding: 0 1rem;
+}
+
+.select input{
+    height: 30px;
+    background: #f6f4f4;
+    border: solid 1px rgb(168, 166, 166);
+    outline: none;
+    padding-left: 1rem;
+
+}
+
+.p-right button{
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 4px;
+    background-color:#0f4068bc;
+    color:white;
+    margin-bottom: 2rem;
+    
+}
+
+.bottom-div{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-family: 'Assistant', sans-serif;
+
+
+}
+
+.bottom-div h2{
+    font-size: 1.5rem;
+    
+}
+.bottom-div p{
+    font-size: 1.2rem;
+    color: #000000a2;
+}
+
+
+.mobile-nav{
+    display: none;
+}
+
+#back-btn{
+    opacity: 0;
+}
+
+
+/* Blog page styling ...................................................................................................... */
+
+
+.Blogpage{
+    width: 100vw;
+    height: 40vh;
+    background: url("vlog\ banner3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.Blog-heropage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Assistant', sans-serif;
+    color: white;
+    padding-top: 2rem;
+}
+
+.Blog-heropage h2{
+    font-size: 4rem;
+}
+
+.Blog-heropage h4{
+    font-size: 1rem;
+}
+
+.vlog-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.vlog1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Assistant', sans-serif;
+    margin-top: 4rem;
+}
+
+
+
+.left-vlog h2{
+    font-size: 5rem;
+    color: grey;
+}
+
+.left-vlog img{
+    height: 350px;
+    margin-top: -2rem;
+}
+
+.vlog1 .right-vlog{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 30%;
+    margin-top: 9rem
+}
+
+.right-vlog h3{
+    font-size: 2rem;
+}
+
+.right-vlog p {
+    transition: 1s;
+   
+}
+
+.right-vlog p:hover{
+    color: #0f4068;
+    letter-spacing: 2px;
+}
+
+
+#more2{
+    margin-top: 4rem;
+}
+
+
+
+.Aboutpage{
+    width: 100vw;
+    height: 40vh;
+    background: url("vlog\ banner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.About-heropage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Assistant', sans-serif;
+    color: white;
+    padding-top: 2rem;
+}
+
+.About-heropage h2{
+    font-size: 4rem;
+}
+
+.About-heropage h4{
+    font-size: 1rem;
+}
+
+.know-us{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.left-us{
+    width: 40%;
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+
+.left-us img{
+    height: 350px;
+    
+}
+
+.right-us{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    font-family: 'Assistant', sans-serif;
+
+}
+
+
+.right-us h2{
+    font-size: 3rem;
+}
+
+.right-us p{
+    font-size: 1rem;
+    color: grey;
+}
+
+.Fashion-App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+
+}
+
+.Fashion-App h1{
+    font-size: 4rem;
+    font-family: 'Assistant', sans-serif;
+
+}
+
+.Fashion-App a{
+    color: #0f4068;
+    
+}
+.video-div{
+    width: 50%;
+    margin-top: 2rem;
+}
+
+.video-div video{
+    width: 100%;
+   
+}
+
+
+
+.contact{
+    width: 100vw;
+    height: 40vh;
+    background: url("vlog\ banner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.contact-heropage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Assistant', sans-serif;
+    color: white;
+    padding-top: 2rem;
+}
+
+.contact-heropage h2{
+    font-size: 4rem;
+}
+
+.contact-heropage h4{
+    font-size: 1rem;
+}
+
+.FashionCare-adrs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+.left-adrs{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'Assistant', sans-serif;
+    margin-top: 4rem;
+}
+
+.left-adrs h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#touch{
+    transition: all 1s;
+}
+
+#touch:hover{
+    letter-spacing: 4px;
+    color: #7d94c9;
+}
+
+.left-adrs h2{
+    font-size: 2rem;
+}
+
+.left-adrs p{
+    color: gray;
+}
+
+.right-adrs{
+    margin-right: 4rem;
+}
+
+.form-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid gray;
+    margin: 4rem;
+
+}
+
+.left-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 4rem;
+}
+
+.left-form{
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+
+.forminfo h3{
+    font-size: 1rem;
+    color: gray;
+    font-weight: 400;
+}
+
+.forminfo h2{
+    font-size: 2rem;
+}
+
+.forminfo input{
+    height: 40px;
+    width: 600px;
+    outline: none;
+    border-radius: 2px;
+    border: solid 1px gray;
+    padding-left: 1rem;
+    background-color: #f7f7f77c;
+    
+}
+
+.forminfo textarea {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    background-color: #f7f7f77c;
+    border-radius: 2px;
+    border: solid 1px gray;
+    outline: none;
+    resize: none;
+
+}
+
+.forminfo button{
+    border: none;
+    border-radius: 2px;
+    padding: 0.4rem 1rem;
+    background-color: #0f4068;
+    color: white;
+    width: 100px;
+    transition: all 0.5s;
+}
+
+.forminfo button:hover{
+    background: #000;
+    box-shadow: 5px 5px 5px gray;
+}
+.right-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-right: 2rem;
+
+}
+
+.clientbox{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+   
+
+}
+
+.client{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: url("client2.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.client-info{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Assistant', sans-serif;
+
+}
+
+.client-info p{
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.cart-table{
+    width: 90%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+    margin-top: 4rem;
+    margin-left: 4rem;
+}
+
+.cart-table table{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'Assistant', sans-serif;
+}
+
+table tr{
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+}
+
+table thead{
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    padding: 1rem 0;
+    padding-left: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+table tbody{
+    padding-left: 1rem;
+
+}
+
+.cart-table table img{
+    height: 70px;
+}
+
+#image-colm{
+    margin-left: 1rem;
+}
+
+#image-row{
+    width: 120px;
+    text-align: center;
+}
+
+#Product-row{
+    width: 300px;
+    text-align: center;
+    margin-left: 1.2rem;
+}
+
+#Product-colm{
+    margin-left:11rem;
+}
+
+#price-colm{
+    margin-left: 7rem;
+}
+#toal-amt{
+    margin-left: 1rem;
+}
+
+#input-row input{
+    width: 50px;
+    margin-left: 1rem;
+   
+}
+
+#delete-icon{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.coupan-offer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10rem;
+    margin-left: 6rem;
+    margin-top: 4rem;
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 4rem;
+
+}
+
+.left-coupan{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+
+}
+
+.left-coupan button{
+    height: 30px;
+    width: 100px;
+    border-radius: 4px;
+    border: none;
+    background-color: #7d94c9;
+    color: white;
+}
+
+.left-coupan button:hover{
+    background-color: #000;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.left-coupan input{
+    height: 30px;
+    width: 300px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    outline: none;
+    padding-left: 1rem;
+}
+
+.right-coupan{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 1px solid grey;
+    padding: 2rem;
+}
+
+.right-coupan table tr{
+   margin-top: 1rem;
+   
+}
+
+.right-coupan table td{
+    width: 100px;
+    margin-left: 0rem;
+    text-align: center;
+    
+   
+}
+
+.right-coupan button{
+    height: 35px;
+    width: 150px;
+    border-radius: 4px;
+    border: none;
+    background-color: #7d94c9;
+    color: white;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.right-coupan button:hover{
+    background-color: #000;
+    box-shadow: 5px 5px 5px grey;
+}
+
+
+
+
+
+
+/* #Shipping{
+    margin-left: 0rem;
+}
+
+#TTL{
+    margin-left: -1rem;
+}
+
+#align{
+    padding-left: 1rem;
+}
+#align-neg{
+    margin-left: 0rem;
+} */
+
+
+
+
+
+
+
+
+/* Responsive .................. ..........................................................................*/
+
+@media (max-width:1025px) {
+    .rightNav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right:-300px;
+        height: 100vh;
+        width: 300px;
+        background-color: rgb(243, 241, 241);
+        gap: 1.5rem;
+        padding-top: 3rem;
+        padding-left: 2rem;
+        box-shadow: 40px 60px rgb(143, 142, 142);
+        transition: all 0.5s;
+        
+        
+        
+        
+    }
+
+    .rightNav.active{
+        right: 0px;
+    }
+
+
+
+    .mobile-nav a{
+        text-decoration: none;
+        color: black;
+        
+
+    }
+
+    #menu.absent{
+        opacity: 0;
+    }
+    
+
+    .mobile-nav{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-right: 3rem;
+
+    }
+
+    .mobile-nav i{
+        scale: 1.5;
+       
+    }
+
+    #back-btn{
+        opacity: 100%;
+    }
+
+
+    .Hero-Page{
+        width: 100vw;
+        justify-content: space-between;
+        
+        
+    }
+
+    .home{
+        height: 50vh;
+        
+    }
+    
+
+    
+.left-Content{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5rem;
+    font-family: 'Assistant', sans-serif;
+    margin-top: 18vh;
+
+
+}
+
+.left-Content h1{
+    font-size: 2.5rem; 
+    
+}
+
+
+
+#h3-01{
+    font-size:1.2rem;
+    font-weight: 600;
+    
+}
+
+#h4-01{
+    font-size: 1rem;
+}
+
+.feature-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    
+
+}
+
+#cardpart{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    width:180px;
+    height: 200px;
+    border: solid 1px rgb(180, 178, 178);
+    border-radius: 6px;
+    box-shadow: 4px 5px 5px rgba(177, 176, 176, 0.533);
+    padding: 1rem 0;
+    background-color: whitesmoke;
+    transition: all 0.2s;
+
+}
+
+.feature-products h1{
+    font-size: 3rem;
+
+}
+
+.Products{
+    width: 100vw;
+
+}
+
+
+
+.cloth-collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-left: 8rem;
+    max-width: 80vw;
+    margin-top: 4rem;
+    padding-bottom: 10rem;
+    
+
+    
+}
+
+.cloth-card{
+    width: 90%;
+
+}
+
+
+.cloth-img img{
+    height: 150px;
+    
+}
+
+.banner{
+    width: 100vw;
+   
+}
+
+.banner h2{
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    color: #0f4068;
+
+}
+
+.new-arrivals{
+    width: 100vw;
+    background-color: rgba(239, 237, 234, 0.7);
+    padding-top: 6rem;
+}
+
+.newCloth-Cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 80vw;
+    padding-bottom: 1.5rem;
+    
+}
+
+.newCloth-Cards .cloth-card .about-cloth p{
+    font-size: 1rem;
+}
+
+.new-launch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-family: 'Assistant', sans-serif;
+    
+}
+
+.new-arrivals h1{
+    font-size: 3rem;
+    letter-spacing: 4px;
+
+}
+
+.large-banner{
+    width: 30vw;
+    height: 25vh;
+}
+.text h3{
+    font-size: 1.8rem;
+    
+}
+
+
+.top-banner{
+    
+    gap:4rem;
+}
+
+.large-banner2{
+    width: 30vw;
+    height: 25vh;
+
+}
+
+
+
+.bottom-banner{
+  
+    gap: 2rem;
+
+}
+
+.medium-banner{
+    width: 25vw;
+    height: 20vh;
+    
+
+}
+
+
+
+#mb2 h3{
+    font-size: 1.5rem;
+   text-align: center;
+}
+
+
+
+
+.rightFooter{
+    margin-left: 7rem;
+    margin-right: 5rem;
+
+}
+
+
+
+.shop-heropage h2{
+    font-size: 5rem;
+    margin-top: 8rem;
+    
+}
+
+.more{
+    margin-top: -4rem;
+}
+
+.more button{
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #0f4068;
+}
+
+.more i{
+    scale: 1;
+    margin-top: 0.2rem;
+    margin-left: 0rem;
+    color: #0f4068;
+}
+
+
+
+.product-info{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.p-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.p-left .upper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b5d4cc;
+    height: 500px;
+    margin-left: 4rem;
+    margin-top: 4rem;
+
+    
+}
+
+.upper img{
+    height: 420px;
+    
+}
+
+.p-left .lower{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-left: 4rem;
+    margin-top: 0.5rem;
+
+}
+
+.image-div{
+    height: 120px;
+    background: #b5d4cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-div img{
+    height: 100px;
+}
+
+.p-right{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-left: 4rem;
+    
+}
+
+.top-div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'Assistant', sans-serif;
+}
+
+.top-div h3{
+    font-size: 2rem;
+    margin-top: 0rem;
+
+}
+
+.top-div h2{
+    font-size: 2.5rem;
+    color: #0f4068;
+}
+
+.select{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+   
+}
+
+#select01{
+    height: 30px;
+    background: #f6f4f4;
+    border: solid 1px rgb(168, 166, 166);
+    outline: none;
+    padding: 0 1rem;
+}
+
+.select input{
+    height: 30px;
+    background: #f6f4f4;
+    border: solid 1px rgb(168, 166, 166);
+    outline: none;
+    padding-left: 1rem;
+
+}
+
+
+
+.bottom-div{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-family: 'Assistant', sans-serif;
+
+
+}
+
+.bottom-div h2{
+    font-size: 1.5rem;
+    
+}
+.bottom-div p{
+    font-size: 1rem;
+    color: #000000a2;
+}
+
+.Blog-heropage{
+    margin-top: 8rem;
+}
+
+.vlog1 .left-vlog{
+    margin-left: 4rem;
+}
+.left-vlog img{
+    height: 220px;
+    margin-top: -2rem;
+}
+
+.vlog1 .right-vlog{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 35%;
+    margin-right: 2rem;
+    margin-top: 7rem
+}
+
+.right-vlog h3{
+    font-size: 1.5rem;
+}
+
+.right-vlog p {
+    transition: 1s;
+   
+}
+
+.right-vlog p:hover{
+    color: #0f4068;
+    letter-spacing: 2px;
+}
+
+.About-heropage{
+    margin-top: 8rem;
+}
+.know-us{
+    flex-direction: column;
+    justify-content:center ;
+    margin-left: 7rem;
+}
+
+.know-us img{
+    height: 350px;
+}
+
+.know-us .right-us{
+    width: 70%;
+    margin-left: 4rem;
+}
+
+.contact-heropage{
+    margin-top: 8rem;
+}
+
+.right-adrs{
+    margin-top: 2rem;
+}
+
+.right-adrs iframe{
+    height: 300px;
+    width: 450px;
+}
+
+.left-adrs{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+
+.left-adrs h3{
+    font-size: 1rem;
+}
+
+.left-adrs h2{
+    font-size: 1.5rem;
+}
+
+.left-adrs p{
+    color: gray;
+}
+
+
+.forminfo h2{
+    font-size: 2rem;
+}
+
+.forminfo input{
+    height: 40px;
+    width: 400px;
+}
+.right-form{
+    margin-top: 8rem;
+    margin-right:4rem;
+}
+
+
+
+.coupan-offer{
+    gap: 5rem;
+    margin-left: 2rem;
+    padding-right: 2rem;
+  
+}
+
+
+.cart-table{
+    width: 85%;
+}
+
+table tr{
+    gap: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* responsive for mobile .................................................................... */
+
+@media (max-width:477px) {
+
+    #nav-bar{
+        box-shadow: 0 0 0 0;
+        padding-bottom:1.2rem;
+
+    }
+
+    .logo h2{
+        font-size: 16px;
+    }
+    .rightNav {
+        top: 0;
+        right:-150px;
+        width: 150px;
+        gap: 1rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        
+    }
+
+    .rightNav a{
+        font-size: 10px;
+    }
+
+    .rightNav.active{
+        right: 0px;
+    }
+
+    #menu.absent{
+        opacity: 0;
+    }
+    
+
+    .mobile-nav{
+        gap: 1rem;
+        margin-right: 2rem;
+
+    }
+
+    .mobile-nav i{
+        scale: 1;
+       
+    }
+
+    #back-btn{
+        opacity: 100%;
+    }
+
+
+    .Hero-Page{
+        
+        width: 100vw;
+        justify-content:center;
+        align-items: center;
+        
+        
+    }
+
+    .home{
+        height: 80vh;
+        background-size:100vh   ;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    
+        
+    }
+
+    
+    
+
+    
+.left-Content{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 13rem;
+    margin-right: 2rem;
+    margin-left: 5rem;
+    
+}
+
+.left-Content h1{
+    font-size: 2rem; 
+    
+    
+}
+
+#firstHead{
+   color: rgb(5, 33, 105);
+}
+#secondHead{
+    color: white;
+}
+
+
+
+#h3-01{
+    opacity: 0;
+    
+}
+
+#h4-01{
+    opacity: 0;
+}
+
+#btn1{
+    opacity: 0;
+}
+
+.feature-cards{
+    gap: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+#cardpart{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+.card{
+    gap: 1rem;
+    width:100px;
+    height: 130px;
+}
+
+.card img{
+    height: 60px;
+}
+
+.card p{
+    font-size:12px;
+}
+
+.Products{
+    padding-top: 2rem;
+    
+}
+
+
+.feature-products h1{
+    font-size: 2rem;
+
+}
+
+.feature-products p{
+    font-size: 0.8rem;
+}
+
+
+
+
+
+.cloth-collection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-left: 4rem;
+    max-width: 70vw;
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
+   
+    
+
+    
+}
+
+.cloth-card{
+    width: 140px;
+    height:220px;
+
+}
+
+.about-cloth p{
+    font-size: 8px;
+
+}
+
+.about-cloth h3{
+    font-size: 10px;
+}
+
+.cloth-price h3{
+    font-size: 14px;
+}
+
+.addCart{
+    height: 2px;
+    width: 2px;
+}
+
+.cloth-price i{
+    font-size: 10px;
+}
+
+.cloth-img img{
+    height: 60px;
+    
+}
+
+
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100vw;
+    height: 100px;
+    padding-top: 3px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    
+    
+   
+}
+
+.banner h2{
+    font-size:10px;
+    padding-top: 0;
+    color: #0f4068;
+    
+
+}
+
+.banner h3{
+    font-size: 10px;
+}
+
+.banner button{
+    font-size: 8px;
+    margin-top: 0;
+    padding: 6px 8px;
+   
+}
+
+.new-arrivals{
+    padding-top: 2rem;
+    
+    
+}
+
+.newCloth-Cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.5rem;
+    margin-left: 4rem;
+    margin-bottom: 0;
+    max-width: 70vw;
+    margin-top: 1rem;
+    padding-bottom: 0px;
+    
+    
+}
+
+.newCloth-Cards .cloth-card .about-cloth p{
+    font-size: 10px;
+}
+
+
+
+
+
+.new-arrivals h1{
+    font-size: 2rem;
+    letter-spacing: 2px;   
+
+}
+
+.new-arrivals p{
+    font-size: 14px;
+}
+
+.large-banner{
+    width: 150px;
+    height: 100px;
+}
+
+.text{
+    margin-left: 10px;
+}
+.text h3{
+    font-size: 12px;
+    
+}
+
+.text h4{
+    font-size: 8px;
+}
+
+.text p{
+    font-size: 8px;
+}
+
+.text button {
+    font-size: 6px;
+    padding: 4px 6px;
+    margin-top: 2px;
+}
+
+.offer-banners{
+    margin-top: 0;
+    gap: 0;
+}
+.top-banner{
+    gap: 1.5rem;
+    margin-bottom: 0;
+    margin-left: 1.4rem;
+   
+}
+
+.large-banner2{
+    width: 150px;
+    height: 100px;
+    margin-right: 2rem;
+    
+}
+
+
+
+.bottom-banner{
+  
+    gap: 1rem;
+    margin-top: 16px;
+    margin-left: 0;
+
+}
+
+.medium-banner{
+    width: 100px;
+    height: 100px;
+    
+
+}
+
+.medium-banner h3{
+    font-size: 10px;
+    text-align: center;
+}
+
+.medium-banner p{
+    font-size: 8px;
+    text-align: center;
+}
+
+#mb2 h3{
+    letter-spacing: 0;
+    font-size: 10px;
+}
+
+
+.newsletter{
+    padding-top: 3rem;
+}
+.news{
+    height: 100px;
+
+}
+
+.news .left{
+    margin-left: 2rem;
+    margin-right: 3rem;
+   
+}
+
+.left h3{
+    font-size:14px;
+}
+
+.left p{
+    font-size: 8px;
+
+}
+
+
+.news .right{
+    margin-right: 2rem;
+}
+
+.right input{
+    width: 80px;
+    height: 18px;
+    padding-left:10px;
+    font-size: 6px;
+  
+}
+
+.right button{
+    border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 0 12px;
+    font-size: 6px;
+   
+}
+
+
+footer{
+    padding-bottom: 3rem;
+    flex-direction: column;
+    
+
+
+}
+
+footer .leftFooter{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 0;
+}
+
+.leftFooter .logoname{
+    margin-bottom: 10px;
+    font-family: 'Salsa';
+    color: rgb(9, 9, 71);
+    
+
+}
+
+.leftFooter .logoname h2{
+    font-size: 16px;
+}
+.contactinfo h3{
+    margin:10px 0;
+    font-size: 12px;
+
+}
+
+.contactinfo h4{
+    color: grey;
+    font-size: 8px;
+    font-weight: 400;
+    
+}
+
+.contactinfo span{
+    color: black;
+    font-weight: 600;
+    
+}
+.social-Media {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.social-Media i{
+    scale: 1;
+    opacity: 80%;
+}
+
+.social-Media i:hover{
+    color: #0f4068;
+    scale: 1.2;
+    transition-duration: 0.5s;
+    
+}
+
+.rightFooter{
+    gap: 2rem;
+    margin-left: 2rem;
+
+}
+
+.coloumn{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.coloumn h4{
+    color: grey;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.coloumn h3{
+    margin-bottom:10px ;
+    font-size: 12px;
+}
+
+.coloumn .apps img{
+    margin: 4px 0;
+    margin-right: 1.4rem;
+    height: 16px;
+    border: solid 1px rgb(37, 136, 103);
+    border-radius: 5px;
+}
+
+.footerbox #copyright{
+    font-size: 8px;
+}
+
+.payment img{
+    height: 10px;
+}
+
+.shop-heropage h2{
+    font-size: 3rem;
+    margin-top: 2rem;
+    
+}
+
+.more{
+    margin-top: 2rem;
+}
+
+.more button{
+    color: white;
+    font-size: 12px;
+    padding: 0.2rem 0.5rem;
+    background-color: #0f4068;
+}
+
+.more i{
+    scale: 1;
+    margin-top: 0.2rem;
+    margin-left: 0rem;
+    color: #0f4068;
+}
+
+
+.product-info{
+    flex-direction: column;
+}
+
+.p-left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.p-left .upper{
+    height: 300px;
+    width: 300px;
+    margin-left: 3rem;
+}
+
+.upper img{
+    height: 250px;
+    
+}
+
+.p-left .lower{
+    gap: 0.4rem;
+    margin-top: 0.3rem;
+    margin-left: 3rem;
+
+}
+
+.image-div{
+    height: 80px;
+   
+}
+
+.image-div img{
+    height: 70px;
+}
+
+.p-right{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    
+}
+
+.top-div{
+    gap: 0.5rem;
+}
+
+.top-div h3{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+
+}
+
+.top-div h2{
+    font-size: 1.5rem;
+}
+
+.select{
+    gap: 1rem;
+   
+}
+
+#select01{
+    height: 25px;
+    padding: 0 0.5rem;
+    font-size: 0.6rem;
+}
+
+.select input{
+    height: 25px;
+    width: 70px;
+    padding-left: 1rem;
+
+}
+
+.p-right button{
+    height: 25px;
+    width: 80px;
+    font-size: 10px;
+    border-radius: 2px;
+    
+    
+}
+
+.bottom-div{
+    width: 80%;
+}
+
+.bottom-div h2{
+    font-size: 1rem;
+    
+}
+.bottom-div p{
+    font-size: 10px;
+    color: #000000a2;
+}
+
+
+.Blog-heropage{
+    margin-top: 2rem;
+}
+
+.Blog-heropage h2{
+    font-size: 3rem;
+    margin-top: 2rem;
+    
+}
+
+.vlog1{
+    flex-direction: column;
+    
+
+}
+
+
+
+.left-vlog img{
+    height: 180px;
+    margin-top: -2.5rem;
+   
+}
+
+.vlog1 .right-vlog{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 70%;
+    margin-left: 3.5rem;
+    margin-top: 2rem
+}
+
+.right-vlog h3{
+    font-size: 1.2rem;
+}
+
+.right-vlog h4{
+    font-size: 12px;
+}
+
+.right-vlog p {
+    font-size: 12px;
+    transition: 1s;
+   
+}
+
+.right-vlog p:hover{
+    color: #0f4068;
+    letter-spacing: 2px;
+}
+
+
+.About-heropage{
+    margin-top: 2rem;
+}
+
+.About-heropage h2{
+    font-size: 3rem;
+    margin-top: 2rem;
+    
+}
+
+.know-us{
+    margin-left: 0rem;
+    
+}
+
+.know-us img{
+    height: 180px;
+}
+
+.know-us .right-us{
+    width: 60%;
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+
+.right-us h2{
+    font-size: 2rem;
+}
+
+.right-us p{
+    font-size: 12px;
+}
+
+.Fashion-App{
+    margin-top: 2rem;
+}
+.Fashion-App h1{
+    font-size: 2rem;
+}
+
+.video-div{
+    margin-right: 2rem;
+}
+
+
+.contact-heropage{
+    margin-top: 2rem;
+}
+
+.contact-heropage h2{
+    font-size: 3rem;
+    margin-top: 2rem;
+    
+}
+
+.FashionCare-adrs{
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.right-adrs iframe{
+    height: 150px;
+    width: 350px;
+    padding-left: 3rem;
+}
+
+.left-adrs{
+    width: 70%;
+    margin-left: 3rem;
+}
+.left-adrs h3{
+    font-size: 12px;
+}
+
+.left-adrs h2{
+    font-size: 16px;
+}
+
+.left-adrs p{
+    font-size: 10px;
+}
+
+.form-details{
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.forminfo h2{
+    font-size: 18px;
+}
+
+.forminfo h3{
+    font-size: 12px;
+}
+
+.forminfo input{
+    height: 30px;
+    width: 250px;
+    font-size: 10px;
+}
+
+.forminfo textarea{
+    width: 250px;
+    height: 150px;
+}
+
+.left-form{
+    margin-right: 2rem;
+    margin-left: 1.5rem;
+}
+
+.right-form{
+    margin-bottom: 1.5rem;
+    margin-top: 0rem;
+    margin-right:1rem;
+    margin-left: 1.5rem;
+}
+
+.client-info h3{
+    font-size: 12px;
+}
+
+.client-info p{
+    font-size: 10px;
+}
+
+.cart-table table{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'Assistant', sans-serif;
+    overflow-x: auto;
+}
+
+.coupan-offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 2rem;
+  
+}
+
+
+.left-coupan button{
+    width: 60px;
+    font-size: 10px;
+   
+}
+
+.left-coupan input{
+    width: 200px;
+}
+
+.right-coupan{
+    gap: 1rem;
+    padding: 1rem;
+    margin-right: 2rem;
+}
+
+.right-coupan table tr{
+   margin-top: 1rem;
+   
+}
+
+.right-coupan table td{
+    width: 60px;
+}
+
+.right-coupan button{
+    height: 30px;
+    width: 120px;
+    font-size: 10px;
+}
+
+
+.cart-table{
+    width: 80%;
+}
+
+
+
+table tr{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+
+table tbody{
+    padding-left: 2rem;
+
+}
+
+
+#Product-row{
+    margin-left: 8rem;
+}
+
+#price-row{
+   padding-left: 1rem;
+}
+#price-colm{
+    margin-left: 3.5rem;
+}
+#toal-amt{
+    margin-left: 2rem;
+}
+
+#input-row input{
+    margin-left: 1rem;
+   
+}
+
+
+}
+
